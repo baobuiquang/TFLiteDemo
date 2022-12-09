@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <Button
+        android:id="@+id/button"
+        android:layout_width="300dp"
+        android:layout_height="80dp"
+        android:layout_above="@id/button2"
+        android:layout_centerInParent="true"
+        android:layout_marginBottom="6dp"
+        android:text="Take photo"
+        android:textAllCaps="false"
+        android:textColor="#FFFFFF"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        tools:ignore="HardcodedText" />
+
+    <Button
+        android:id="@+id/button2"
+        android:layout_width="300dp"
+        android:layout_height="80dp"
+        android:layout_alignParentBottom="true"
+        android:layout_centerInParent="true"
+        android:layout_marginBottom="32dp"
+        android:text="Load from files"
+        android:textAllCaps="false"
+        android:textColor="#FFFFFF"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        tools:ignore="HardcodedText" />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:text="Image:"
+        android:textStyle="bold"
+        android:textSize="24sp"
+        android:id="@+id/imagetext"
+        android:layout_marginTop="24sp"
+        tools:ignore="HardcodedText" />
+    <ImageView
+        android:layout_width="200sp"
+        android:layout_height="200sp"
+        android:layout_centerHorizontal="true"
+        android:id="@+id/imageView"
+        android:layout_marginTop="16sp"
+        android:layout_below="@+id/imagetext"
+        android:contentDescription="The Image Input"
+        tools:ignore="HardcodedText" />
+<!--    <com.google.android.material.imageview.ShapeableImageView-->
+<!--        android:id="@+id/imageView2"-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:adjustViewBounds="true"-->
+<!--        android:scaleType="fitCenter"-->
+<!--        android:layout_margin="5dp"-->
+<!--        android:layout_centerInParent="true"-->
+<!--        app:shapeAppearanceOverlay="@style/roundimageview"/>-->
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:text="Prediction:"
+        android:textStyle="bold"
+        android:textSize="24sp"
+        android:id="@+id/classified"
+        android:layout_below="@+id/imageView"
+        android:layout_marginTop="24sp"
+        tools:ignore="HardcodedText" />
+
+    <TextView
+        android:id="@+id/result"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/classified"
+        android:layout_centerHorizontal="true"
+        android:text="🤔"
+        android:textColor="#673AB7"
+        android:textSize="100sp"
+        android:textStyle="bold"
+        tools:ignore="HardcodedText" />
+
+</RelativeLayout>
